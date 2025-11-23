@@ -7,11 +7,16 @@
 // баланс користувачів (властивість balance), стать яких (властивість gender)
 // збігається зі значенням параметра gender.
 
-function getTotalBalanceByGender(users, gender) {
-  return users.reduce((acc, user) => {
-    return acc + (user.gender === gender ? user.balance : 0);
-  }, 0);
-}
+const getTotalBalanceByGender = (users, gender) => users
+  .filter(user => user.gender === gender)
+  .reduce((totalBalance, user) => totalBalance + user.balance, 0);
+
+  
+// function getTotalBalanceByGender(users, gender) {
+//   return users.reduce((acc, user) => {
+//     return acc + (user.gender === gender ? user.balance : 0);
+//   }, 0);
+// }
 
 
 
