@@ -3,8 +3,7 @@
 // користувачів (властивість name) із масиву users.
 
 function getUserNames(users) {
-    const names = users.map(user => user.name);
-    return names;
+    return users.map(user => user.name);
 }
 
 
