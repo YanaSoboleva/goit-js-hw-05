@@ -12,7 +12,9 @@
 // які задовольняють певну умову.
 // Використовуй метод includes() для перевірки, чи масив friends містить friendName.
 
-const getUsersWithFriend = (users, friendName) => users.filter(user => user.friends.includes(friendName));
+const getUsersWithFriend = (users, friendName) => users
+  .filter(user => user.friends
+  .includes(friendName));
 // function getUsersWithFriend(users, friendName) {
 //   return users.filter(user => {
 //     return user.friends.includes(friendName);
